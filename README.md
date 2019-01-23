@@ -41,3 +41,12 @@ Use something like POSTMAN for making a post request to `http://127.0.0.1:8000/c
     "destination_blob_name": "kitten.png"
 }
 ```
+
+Alternatively, you can also make use of the commandline utility cURL to make the POST request.
+
+```bash
+curl --header "Content-Type: application/json" \
+    --request POST \
+    --data '{"source_bucket_name": "b-ao-intern-test1", "source_blob_name": "kitten.png", "destination_bucket_name": "b-ao-intern-test2", "destination_blob_name": "kitten.png"}' \
+    http://127.0.0.1:8000/copy_blob/  
+```

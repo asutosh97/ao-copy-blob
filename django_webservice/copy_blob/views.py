@@ -22,14 +22,3 @@ def home(request):
     else:
         return JsonResponse({"foo":"bar"})
 
-
-
-
-'''
-curl --header "Content-Type: application/json" \
---request POST \
---data '{"source_bucket_name": "b-ao-intern-test1", "source_blob_name": "kitten.png", "destination_bucket_name": "b-ao-intern-test2", "destination_blob_name": "kitten.png"}' \
--s -o /dev/null -w "%{http_code}" http://localhost:8000/copy_blob/ 
-200% 
-
-'''

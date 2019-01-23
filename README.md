@@ -13,7 +13,7 @@ LOGFILE_NAME = "name of the logfile"
 ### Dependencies
 All the python dependencies that are required are included in the requirements.txt file and procedure for installation is given in the installation section. But, since the code is tested on `python3`, it is recommended to have python3 installated on the system. And for isolating the project environment, it is recommended to have `virtualenv` installed.
 
-### Installion and Running the webapp
+### Installation and Running the webapp
 
 ```bash
 git clone https://github.com/asutosh97/ao-copy-blob-and-log.git

@@ -21,7 +21,7 @@ cd ao-copy-blob-and-log
 virtualenv -p python3 env
 source env/bin/activate
 pip install -r requirements.txt
-django_webservice/manage.py runserver
+python django_webservice/manage.py runserver
 ```
 
 This will run the webapp at `http://127.0.0.1:8000`

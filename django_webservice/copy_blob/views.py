@@ -13,14 +13,6 @@ def home(request):
     if request.method == "POST":
         received_json_data = json.loads(request.body.decode('utf-8'))
         response = copy_blob.copy_blob(**received_json_data)
-
-        # print to console so that its saved in the log file.
-        log_data = {
-                "request": request, 
-                "response": response, 
-                "timestamp":str(datetime.datetime.now())
-        }
-        print("\n\nBlob-Copy-Report :- {}\n\n".format(json.dumps(log_data)))
         
         success = isinstance(response, dict)
         

@@ -1,4 +1,4 @@
-# ao-copy-blob-and-log
+# ao-copy-blob
 A Django webapp that basically copies a blob from one bucket to another.
 
 ### Constant Configuration (Not required if deploying in GCP Compute Engine Instance)

@@ -1,13 +1,11 @@
 # ao-copy-blob-and-log
-A Django webapp that basically copies a blob from one bucket to another and logs about the transaction in a log file and uploads it to a bucket.
+A Django webapp that basically copies a blob from one bucket to another.
 
-### Constant Configuration
+### Constant Configuration (Not required if deploying in GCP Compute Engine Instance)
 Go to the file `django_webservice/miscutils/constants.py` to set the constants to their appropriate values
 
 ```python3
 KEYPATH = "path to the service_account_credentials.json file"
-BUCKET_NAME = "name of the bucket in which the log files will be stored"
-LOGFILE_NAME = "name of the logfile"
 ```
 
 ### Dependencies
